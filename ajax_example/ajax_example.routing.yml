@@ -1,0 +1,31 @@
+ajax_example.description:
+  path: 'examples/ajax-example'
+  defaults:
+    _controller: '\Drupal\ajax_example\Controller\AjaxExampleController::description'
+    _title: 'AJAX Example'
+  requirements:
+    _access: 'TRUE'
+
+ajax_example.simplest:
+  path: 'examples/ajax-example/simplest'
+  defaults:
+    _form: '\Drupal\ajax_example\Form\AjaxExampleSimplest'
+    _title: 'Simplest AJAX Example'
+  requirements:
+    _access: 'TRUE'
+
+ajax_example.progresssbar:
+  path: 'examples/ajax-example/progressbar'
+  defaults:
+    _form: '\Drupal\ajax_example\Form\AjaxExampleProgressBar'
+    _title: 'Progress bar'
+  requirements:
+    _access: 'TRUE'
+
+ajax_example.progresssbarProgress:
+  path: 'examples/ajax-example/progressbar/progress/{time}'
+  defaults:
+    _form: '\Drupal\ajax_example\Form\AjaxExampleProgressBar::ajax_example_progressbar_progress'
+    _title: 'Progress bar Progress'
+  requirements:
+    _access: 'TRUE'
